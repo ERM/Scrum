@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+
+    <body>
+
+        <!--SideVar-->
+        <div class="container section">
+            <!--Botón de menú-->
+            <a href="#" class="sidenav-trigger" data-target="_panelSide">
+                <i class="material-icons">menu</i>
+            </a>
+            <!--Creación de Portada-->
+            <ul class="sidenav" id="_panelSide">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="Background.jpg" alt="">
+                        </div>
+                        <a href="#">
+                            <img src="ERM01.jpg" class="circle">
+                        </a>
+                        <a href="">
+                            <span class="name white-text">Erick Rodríguez Mtz</span>
+                        </a>
+                        <a href="">
+                            <span class="email white-text">erodriguez@ciumx.com</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+            });
+
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
+            
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+        </script>
+
+    </body>
+</html>
